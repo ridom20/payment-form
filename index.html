@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+        <h1>Payment Form</h1>
+    </div>
+    <div class="full">
+        <form action="" id="myForm" class="forms" method="POST">
+            <div class="name">
+                <h2>Contact Information</h2>
+                
+            </div>
+            <p>You must fill out all required field</p>
+            <div class="user_name">
+                <h3 class="u_name">Name<span>*</span></h3>
+                <input class="f_name" type="text" name="firstName" required> <br>
+                <label class="f_label" id="firstName">first name</label>
+                <input class="l_name" type="text" name="lastName" required> <br>
+                <label class="l_label" id="lastName">last name</label>
+            </div>
+            <h3 class="user_name1">Email<span>*</span></h3>
+            <input type="text" class="email" name="email" required>
+            <h3 class="user_name1">Password<span>*</span></h3>
+            <input type="password" class="password" name="pass" required>
+            <h3 class="user_name1">Phone<span>*</span></h3>
+            <input type="tel" class="number" name="phone" required>
+            <h3 class="user_name1">Gender <span>*</span></h3>
+            <div class="gender" >
+                <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female" required >
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other" required>
+  <label for="other">Other</label>
+
+            </div>
+            <section>
+                <div class="pay">
+                    <h1>Payment Information</h1>
+                </div>
+                <div class="card">
+                    <h3 class="user_name1">Card type<span>*</span></h3>
+                    <select name="subject" id="" class="option">
+                        <option value="" disabled="disabled" selected="selected">---Choose Option</option>
+                        <option value="bKash" name="bKash">bKash</option>
+                        <option value="rocket" name="rocket" >Rocket</option>
+                        <option value="mastercard" name="mastercard" >Master Card</option>
+                    </select>
+                </div>
+                <div class="card_num">
+                    <h3 class="user_name1">Card Number<span>*</span></h3>
+                    <input type="text" class="c_number" name="cardNum" required>
+
+
+                </div>
+                <div class="expired">
+                    <h3 class="user_name2">Expired Date<span>*</span></h3>
+                    <input type="date" class="e_date" name="expDate" required>
+                </div>
+                <div class="bill">
+                    <h3 class="user_name1">Billing Address<span>*</span></h3>
+
+                    <input type="text" class="address" placeholder="Street address" required>
+                    <input type="text" class="apt" placeholder="Apt,bldg,h no" required>
+                    <input type="text" class="city" placeholder="city" required>
+                    <input type="text" class="zip" placeholder="Zip code" required>
+                    <div class="check">
+                    <label for="" class="b_add">
+                        <input type="checkbox" class="checkbox">
+                        ship to my billing address
+
+                    </label>
+                </div>
+                </div>
+                
+                
+                <button class="btn2 btn3" type="reset">Reset</button>
+    <button class="btn btn1" type="submit">Submit</button>
+
+
+    </div>
+
+
+
+    
+    </section>
+
+
+    </form>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
